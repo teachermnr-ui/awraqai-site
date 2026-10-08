@@ -107,6 +107,9 @@ section{padding:56px 0}
 .app.teal .feat li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F7F80' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E")}
 .app .note{font-size:.88rem;color:var(--muted);background:#F7F9FB;border-radius:10px;padding:8px 12px;margin:-4px 0 16px;line-height:1.6}
 .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.btn-soon{background:#F1F4F7;color:var(--muted);border:1.5px dashed #C9D3DD;cursor:default}
+.uc{background:var(--teal-t);border-bottom:1px solid #CDE9E9;color:var(--teal-d);font-weight:700;font-size:.95rem;text-align:center;padding:9px 16px;line-height:1.6}
+.uc span{font-weight:400;color:var(--text)}
 .app.blue{--accent:var(--blue);--accent-t:var(--blue-t)}
 .app.teal{--accent:var(--teal-d);--accent-t:var(--teal-t)}
 .app .actions .btn-primary{background:var(--accent)}
@@ -189,6 +192,7 @@ footer{padding:36px 0 30px;border-top:1px solid var(--line);margin-top:56px;font
     <a class="btn btn-ghost btn-sm" href="#contact">تواصل معنا</a>
   </div>
 </header>
+<div class="uc" role="status">الموقع قيد الإنشاء — قريبًا <span>· نعمل على إطلاق تطبيقاتنا، ويسعدنا تواصلك عبر البريد.</span></div>
 
 <main id="main">
   <!-- Hero -->
@@ -235,18 +239,14 @@ footer{padding:36px 0 30px;border-top:1px solid var(--line);margin-top:56px;font
               <p class="tag">نظام مدرسي موحَّد للمعلم الفرد وللمدرسة كاملة</p>
             </div>
           </div>
-          <ul class="chips"><li class="chip live">متاح الآن على الويب</li><li class="chip soon">قريبًا على Google Play</li></ul>
+          <ul class="chips"><li class="chip soon">قريبًا على الويب</li><li class="chip soon">قريبًا على Google Play</li></ul>
           <p class="desc">يجمع أعمال المعلم والمدرسة اليومية في مكان واحد، من النشاط الصفي حتى التعميم الإداري، فلا يتنقّل المعلم بين الدفاتر والجداول والمجموعات.</p>
           <ul class="feat">
             <li>أنشطة رقمية وأوراق عمل تفاعلية يحلّها الطلاب من أي جهاز، وتُصحَّح وتُجمع نتائجها تلقائيًا.</li>
             <li>الغياب والتأخر والاستئذان، والاختبارات ونتائجها، بتقارير جاهزة للطباعة والمشاركة.</li>
             <li>الجداول والمناوبة والزيارات الصفية، وتعاميم بتوقيع رقمي، وصفحة «يومي» لمهام اليوم.</li>
           </ul>
-          <div class="actions">
-            <a class="btn btn-primary btn-sm" href="https://injaz.awraqai.com" rel="noopener">افتح منجز
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg></a>
-            <a class="btn btn-ghost btn-sm" href="https://injaz.awraqai.com/privacy.html" rel="noopener">سياسة الخصوصية</a>
-          </div>
+          <div class="actions"><span class="btn btn-sm btn-soon" aria-disabled="true">قريبًا</span></div>
         </article>
 
         <!-- Maher -->
@@ -265,10 +265,7 @@ footer{padding:36px 0 30px;border-top:1px solid var(--line);margin-top:56px;font
             <li>تقارير يومية وأسبوعية وشهرية، وتقرير الحلقة بصيغة PDF لأي شهر هجري، وشهادة «أفضل طالب في الشهر».</li>
             <li>بيانات الطلاب تبقى على جوال المعلم، مع نسخة احتياطية في حسابه على Google Drive وقفل بالبصمة، والمصحف محفوظ على الجهاز دون إنترنت.</li>
           </ul>
-          <div class="actions">
-            <a class="btn btn-primary btn-sm" href="https://teachermnr-ui.github.io/maher-app-privacy/guide/" rel="noopener">دليل الاستخدام</a>
-            <a class="btn btn-ghost btn-sm" href="https://teachermnr-ui.github.io/maher-app-privacy/" rel="noopener">سياسة الخصوصية</a>
-          </div>
+          <div class="actions"><span class="btn btn-sm btn-soon" aria-disabled="true">قريبًا</span></div>
         </article>
 
         <!-- Family tree -->
@@ -280,16 +277,14 @@ footer{padding:36px 0 30px;border-top:1px solid var(--line);margin-top:56px;font
               <p class="tag">شجرة نسب تفاعلية تُبنى لكل عائلة</p>
             </div>
           </div>
-          <ul class="chips"><li class="chip live">قالب جاهز لكل عائلة</li><li class="chip soon">تطبيق أندرويد قريبًا</li></ul>
+          <ul class="chips"><li class="chip">قالب لكل عائلة</li><li class="chip soon">تطبيق أندرويد قريبًا</li></ul>
           <p class="desc">موقع خاص بعائلتك يحفظ نسبها وأجيالها في شجرة شعاعية تفاعلية، ويجمع أخبارها وأرشيفها، ويسهل على أفرادها الوصول إليه ومشاركته.</p>
           <ul class="feat">
             <li>مروحة شعاعية تفاعلية تتسع لمئات الأفراد عبر أجيال متعددة، مع بحث سريع بالاسم.</li>
             <li>حاسبة قرابة تبيّن صلة أي فردين، وبطاقات للأفراد تُشارك برمز QR.</li>
             <li>صلاحيات متعددة المستويات للإضافة والمراجعة، وصفحات لأخبار العائلة وإحصاءاتها.</li>
           </ul>
-          <div class="actions">
-            <a class="btn btn-primary btn-sm" href="mailto:info@awraqai.com?subject=%D8%B7%D9%84%D8%A8%20%D8%B4%D8%AC%D8%B1%D8%A9%20%D8%B9%D8%A7%D8%A6%D9%84%D8%A9">اطلب شجرة لعائلتك</a>
-          </div>
+          <div class="actions"><span class="btn btn-sm btn-soon" aria-disabled="true">قريبًا</span></div>
         </article>
 
         <!-- Hotel -->
@@ -308,9 +303,7 @@ footer{padding:36px 0 30px;border-top:1px solid var(--line);margin-top:56px;font
             <li>عقود الأفراد وملفات المنشأة في أرشيف منظَّم، ودليل مرجعي للجهات وأرقام التواصل.</li>
             <li>المخزون والعُهد، ومسيّرات الرواتب في مكان واحد.</li>
           </ul>
-          <div class="actions">
-            <a class="btn btn-primary btn-sm" href="mailto:info@awraqai.com?subject=%D8%B7%D9%84%D8%A8%20%D9%86%D8%B3%D8%AE%D8%A9%20%D8%AA%D8%AC%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9%20%D9%85%D9%86%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%81%D9%86%D8%AF%D9%82%D9%8A%D8%A9">اطلب نسخة تجريبية</a>
-          </div>
+          <div class="actions"><span class="btn btn-sm btn-soon" aria-disabled="true">قريبًا</span></div>
         </article>
       </div>
     </div>
