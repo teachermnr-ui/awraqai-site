@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أوراق الذكاء الاصطناعي | AwraqAI</title>
+<meta name="description" content="أوراق الذكاء الاصطناعي (AwraqAI): تطبيقات عربية للتعليم وحلقات القرآن الكريم والعائلات والمنشآت الفندقية — منجز المدرسي، وماهر لمتابعة حلقات القرآن، ومنصة شجرة العائلة، ونظام الإدارة الفندقية.">
+<meta name="theme-color" content="#1D4E89">
+<link rel="canonical" href="https://awraqai.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:site_name" content="أوراق الذكاء الاصطناعي">
+<meta property="og:title" content="أوراق الذكاء الاصطناعي | AwraqAI">
+<meta property="og:description" content="تطبيقات عربية تنقل العمل اليومي من الورق إلى أنظمة بسيطة تعمل على الجوال.">
+<meta property="og:url" content="https://awraqai.com/">
+<meta property="og:image" content="https://awraqai.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#1AA6A6; --teal-d:#0F7F80; --teal-t:#E7F5F5;
+  --blue:#1D4E89; --blue-d:#163C6A; --blue-t:#EAF0F8;
+  --ink:#13233A; --text:#33445A; --muted:#617187;
+  --bg:#FBFCFD; --surface:#FFFFFF; --line:#E2E9F0;
+  --radius:18px; --shadow:0 1px 2px rgba(19,35,58,.05),0 8px 24px -12px rgba(19,35,58,.14);
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Tajawal",system-ui,sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue);text-decoration:none}
+a:hover{color:var(--teal-d)}
+h1,h2,h3{font-family:"Markazi Text",serif;color:var(--ink);line-height:1.25;margin:0;font-weight:700}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 18px}
+.skip{position:absolute;inset-inline-start:-999px}
+.skip:focus{inset-inline-start:12px;top:12px;background:#fff;padding:8px 14px;border-radius:8px;z-index:99}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(251,252,253,.88);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.top.scrolled{border-bottom-color:var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.brand img{width:46px}
+.brand b{font-family:"Markazi Text",serif;font-size:1.18rem;white-space:nowrap;font-weight:700;line-height:1.1;display:block}
+.brand small{display:block;font-size:.72rem;letter-spacing:.14em;color:var(--teal-d);font-weight:700;direction:ltr;text-align:right}
+nav.links{display:none;gap:26px;font-weight:500}
+nav.links a{color:var(--text)}
+nav.links a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:12px;font-weight:700;font-size:.98rem;border:1.5px solid transparent;transition:transform .15s,background .15s,border-color .15s,color .15s;cursor:pointer;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d);color:#fff}
+.btn-ghost{background:var(--surface);color:var(--blue);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn-sm{min-height:40px;padding:0 14px;font-size:.92rem;border-radius:10px}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{padding:34px 0 46px;position:relative}
+.hero-grid{display:grid;gap:26px;align-items:center}
+.hero-art{position:relative;justify-self:center;width:min(58vw,260px);order:-1}
+.hero-art::before{content:"";position:absolute;inset:6% 4% 0;border-radius:50%;background:radial-gradient(closest-side,var(--teal-t),rgba(231,245,245,0) 72%),radial-gradient(closest-side at 70% 40%,var(--blue-t),rgba(234,240,248,0) 70%)}
+.hero-art img{position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:700;color:var(--teal-d);background:var(--teal-t);padding:5px 12px;border-radius:999px;margin-bottom:14px}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.hero h1{font-size:clamp(2.2rem,8.4vw,3.6rem);letter-spacing:-.005em}
+.hero h1 em{font-style:normal;color:var(--teal-d)}
+.hero p.lead{margin-top:14px;font-size:1.08rem;color:var(--text);max-width:36em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:30px;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:.92rem;line-height:1.5}
+.facts b{display:block;font-family:"Markazi Text",serif;font-size:1.35rem;color:var(--blue);line-height:1.2}
+
+/* sections */
+section{padding:56px 0}
+.sec-head{max-width:40em;margin-bottom:28px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--teal-d);letter-spacing:.02em;margin-bottom:6px;display:block}
+.sec-head h2{font-size:clamp(1.9rem,6vw,2.7rem)}
+.sec-head p{margin-top:10px;color:var(--muted)}
+
+/* apps */
+#apps{background:linear-gradient(180deg,var(--bg),#F3F7FA)}
+.apps{display:grid;gap:18px}
+.app{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 20px 20px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.app::before{content:"";position:absolute;inset-inline:0;top:0;height:4px;background:var(--accent)}
+.app-head{display:flex;gap:14px;align-items:flex-start}
+.ico{flex:none;width:54px;height:54px;border-radius:14px;display:grid;place-items:center;background:var(--accent-t);color:var(--accent)}
+.ico svg{width:30px;height:30px}
+.app h3{font-size:1.75rem}
+.app .tag{color:var(--muted);font-size:.95rem;line-height:1.55;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px;padding:0;list-style:none}
+.chip{font-size:.8rem;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:#F7F9FB;line-height:1.5;display:inline-flex;align-items:center;gap:6px}
+.chip.live{color:#0B6E5C;background:#E6F6F1;border-color:#C5EADF}
+.chip.live::before{content:"";width:7px;height:7px;border-radius:50%;background:#12A07F}
+.chip.soon::before{content:"";width:7px;height:7px;border-radius:50%;background:#E2A23B}
+.app .desc{margin-top:10px}
+.feat{list-style:none;padding:0;margin:14px 0 18px;display:grid;gap:8px}
+.feat li{display:flex;gap:10px;line-height:1.65;font-size:.97rem}
+.feat li::before{content:"";flex:none;width:18px;height:18px;margin-top:5px;border-radius:6px;background:var(--accent-t) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231D4E89' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat}
+.app.teal .feat li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F7F80' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E")}
+.app .note{font-size:.88rem;color:var(--muted);background:#F7F9FB;border-radius:10px;padding:8px 12px;margin:-4px 0 16px;line-height:1.6}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.app.blue{--accent:var(--blue);--accent-t:var(--blue-t)}
+.app.teal{--accent:var(--teal-d);--accent-t:var(--teal-t)}
+.app .actions .btn-primary{background:var(--accent)}
+.app .actions .btn-primary:hover{filter:brightness(.92)}
+
+/* principles */
+.pr-grid{display:grid;gap:14px}
+.pr{display:flex;gap:14px;padding:18px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.pr .n{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--blue-t);color:var(--blue)}
+.pr .n svg{width:22px;height:22px}
+.pr h3{font-size:1.4rem}
+.pr p{color:var(--muted);font-size:.96rem;margin-top:2px;line-height:1.7}
+
+/* audience */
+.aud{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.aud li{padding:10px 16px;border-radius:12px;background:var(--surface);border:1px solid var(--line);font-weight:500;display:flex;align-items:center;gap:8px}
+.aud li span{color:var(--muted);font-size:.86rem;font-weight:400}
+
+/* contact */
+.contact{background:var(--blue);color:#DCE6F3;border-radius:24px;padding:34px 22px;display:grid;gap:22px;align-items:center;position:relative;overflow:hidden}
+.contact::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;inset-inline-start:-110px;bottom:-160px;background:radial-gradient(closest-side,rgba(26,166,166,.55),rgba(26,166,166,0))}
+.contact h2{color:#fff;font-size:clamp(1.9rem,6vw,2.6rem)}
+.contact p{margin-top:8px;max-width:34em}
+.contact .mail{position:relative;z-index:1;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.contact .btn-primary{background:#fff;color:var(--blue)}
+.contact .btn-primary:hover{background:var(--teal-t);color:var(--blue-d)}
+.contact .addr{direction:ltr;font-weight:700;color:#fff;font-size:1.05rem;letter-spacing:.02em}
+
+/* footer */
+footer{padding:36px 0 30px;border-top:1px solid var(--line);margin-top:56px;font-size:.93rem;color:var(--muted)}
+.f-grid{display:grid;gap:22px}
+.f-brand{display:flex;gap:12px;align-items:center}
+.f-brand img{width:54px}
+.f-brand b{font-family:"Markazi Text",serif;font-size:1.3rem;color:var(--ink);display:block;line-height:1.2}
+.f-links{display:flex;flex-wrap:wrap;gap:8px 22px}
+.f-links a{color:var(--text)}
+.f-links a:hover{color:var(--blue)}
+.copy{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:.86rem}
+
+@media (min-width:720px){
+  .facts{grid-template-columns:repeat(4,1fr)}
+  .apps{grid-template-columns:1fr 1fr}
+  .pr-grid{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1.4fr 1fr;padding:44px 40px}
+  .f-grid{grid-template-columns:1fr auto;align-items:center}
+}
+@media (min-width:960px){
+  nav.links{display:flex}
+  .hero{padding:56px 0 64px}
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:40px}
+  .hero-art{width:100%;max-width:440px;order:0}
+  .hero h1 .br{display:block}
+  .hero h1{font-size:3.05rem}
+  .facts b{font-size:1.2rem}
+  section{padding:76px 0}
+  .app{padding:26px 26px 24px}
+}
+@media (max-width:380px){
+  .brand small{display:none}
+  .bar .btn{padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="top" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="أوراق الذكاء الاصطناعي — الصفحة الرئيسة">
+      <img src="logo-mark.webp" alt="" width="46" height="32">
+      <span><b>أوراق الذكاء الاصطناعي</b><small>AWRAQAI</small></span>
+    </a>
+    <nav class="links" aria-label="التنقل الرئيس">
+      <a href="#apps">التطبيقات</a>
+      <a href="#why">مبادئنا</a>
+      <a href="#audience">لمن نعمل</a>
+      <a href="privacy.html">الخصوصية</a>
+    </nav>
+    <a class="btn btn-ghost btn-sm" href="#contact">تواصل معنا</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i></i>تطبيقات عربية للتعليم والمؤسسات</span>
+        <h1 id="hero-title">من <em>الأوراق</em> المتناثرة <span class="br">إلى أنظمة تعمل من جوالك</span></h1>
+        <p class="lead">«أوراق الذكاء الاصطناعي» علامة عربية تبني تطبيقات عملية للمعلمين والمدارس وحلقات القرآن الكريم والعائلات والمنشآت الفندقية؛ تنقل العمل اليومي من الدفاتر والملفات إلى أدوات واضحة، سريعة، تحترم خصوصية مستخدميها.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#apps">استعرض التطبيقات
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+          <a class="btn btn-ghost" href="#contact">تواصل معنا</a>
+        </div>
+        <ul class="facts" aria-label="لمحة سريعة">
+          <li><b>٤ تطبيقات</b>للتعليم والقرآن والعائلة والفندقة</li>
+          <li><b>عربية بالكامل</b>واجهات من اليمين إلى اليسار</li>
+          <li><b>الجوال أولًا</b>تعمل على الهاتف قبل الحاسب</li>
+          <li><b>خصوصية أولًا</b>أقل قدر ممكن من البيانات</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <img src="logo-awraqai.webp" width="720" height="644" alt="شعار أوراق الذكاء الاصطناعي AwraqAI">
+      </div>
+    </div>
+  </section>
+
+  <!-- Apps -->
+  <section id="apps" aria-labelledby="apps-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">تطبيقاتنا</span>
+        <h2 id="apps-title">أربعة تطبيقات، وهدف واحد: عمل أقل على الورق</h2>
+        <p>صُمِّم كل تطبيق لمشكلة يومية محددة، بعد معايشة أصحابها في الميدان.</p>
+      </div>
+
+      <div class="apps">
+        <!-- Injaz -->
+        <article class="app blue" aria-labelledby="a1">
+          <div class="app-head">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4.5V3h6v1.5"/><path d="M8.5 10l1.5 1.5 3-3M8.5 16l1.5 1.5 3-3M15 10.5h1.5M15 16.5h1.5"/></svg></div>
+            <div>
+              <h3 id="a1">منجز المدرسي</h3>
+              <p class="tag">نظام مدرسي موحَّد للمعلم الفرد وللمدرسة كاملة</p>
+            </div>
+          </div>
+          <ul class="chips"><li class="chip live">متاح الآن على الويب</li><li class="chip soon">قريبًا على Google Play</li></ul>
+          <p class="desc">يجمع أعمال المعلم والمدرسة اليومية في مكان واحد، من النشاط الصفي حتى التعميم الإداري، فلا يتنقّل المعلم بين الدفاتر والجداول والمجموعات.</p>
+          <ul class="feat">
+            <li>أنشطة رقمية وأوراق عمل تفاعلية يحلّها الطلاب من أي جهاز، وتُصحَّح وتُجمع نتائجها تلقائيًا.</li>
+            <li>الغياب والتأخر والاستئذان، والاختبارات ونتائجها، بتقارير جاهزة للطباعة والمشاركة.</li>
+            <li>الجداول والمناوبة والزيارات الصفية، وتعاميم بتوقيع رقمي، وصفحة «يومي» لمهام اليوم.</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary btn-sm" href="https://injaz.awraqai.com" rel="noopener">افتح منجز
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg></a>
+            <a class="btn btn-ghost btn-sm" href="https://injaz.awraqai.com/privacy.html" rel="noopener">سياسة الخصوصية</a>
+          </div>
+        </article>
+
+        <!-- Maher -->
+        <article class="app teal" aria-labelledby="a2">
+          <div class="app-head">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10.2 5 7.6 4.5 4 4.8V18c3.6-.3 6.2.2 8 1.7 1.8-1.5 4.4-2 8-1.7V4.8c-3.6-.3-6.2.2-8 1.7z"/><path d="M12 6.5v13.2"/><path d="M7 8.5h2.5M7 11.5h2.5M14.5 8.5H17M14.5 11.5H17"/></svg></div>
+            <div>
+              <h3 id="a2">ماهر لمتابعة حلقات القرآن</h3>
+              <p class="tag">سجلّ الحلقة في جيب المعلّم</p>
+            </div>
+          </div>
+          <ul class="chips"><li class="chip soon">قريبًا على Google Play</li><li class="chip">أندرويد</li></ul>
+          <p class="desc">يدوّن حفظ كل طالب ومراجعته وتثبيته وغيابه، ثم يحوّلها بضغطة إلى تقرير أنيق يصل وليّ الأمر عبر واتساب، دون دفاتر تضيع أو ساعات من الكتابة.</p>
+          <ul class="feat">
+            <li>الدرس والمراجعة والتثبيت لكل طالب، مع عرض التقدم بالآية والصفحة والجزء.</li>
+            <li>تقارير يومية وأسبوعية وشهرية، وتقرير الحلقة بصيغة PDF لأي شهر هجري، وشهادة «أفضل طالب في الشهر».</li>
+            <li>بيانات الطلاب تبقى على جوال المعلم، مع نسخة احتياطية في حسابه على Google Drive وقفل بالبصمة، والمصحف محفوظ على الجهاز دون إنترنت.</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary btn-sm" href="https://teachermnr-ui.github.io/maher-app-privacy/guide/" rel="noopener">دليل الاستخدام</a>
+            <a class="btn btn-ghost btn-sm" href="https://teachermnr-ui.github.io/maher-app-privacy/" rel="noopener">سياسة الخصوصية</a>
+          </div>
+        </article>
+
+        <!-- Family tree -->
+        <article class="app teal" aria-labelledby="a3">
+          <div class="app-head">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2"/><circle cx="5.5" cy="12" r="2"/><circle cx="18.5" cy="12" r="2"/><circle cx="3.5" cy="19.5" r="1.6"/><circle cx="8.5" cy="19.5" r="1.6"/><circle cx="18.5" cy="19.5" r="1.6"/><path d="M12 6.5v2.5M12 9H5.5v1M12 9h6.5v1M5.5 14v2.5M5.5 16.5H3.5v1.4M5.5 16.5h3v1.4M18.5 14v3.9"/></svg></div>
+            <div>
+              <h3 id="a3">منصة شجرة العائلة</h3>
+              <p class="tag">شجرة نسب تفاعلية تُبنى لكل عائلة</p>
+            </div>
+          </div>
+          <ul class="chips"><li class="chip live">قالب جاهز لكل عائلة</li><li class="chip soon">تطبيق أندرويد قريبًا</li></ul>
+          <p class="desc">موقع خاص بعائلتك يحفظ نسبها وأجيالها في شجرة شعاعية تفاعلية، ويجمع أخبارها وأرشيفها، ويسهل على أفرادها الوصول إليه ومشاركته.</p>
+          <ul class="feat">
+            <li>مروحة شعاعية تفاعلية تتسع لمئات الأفراد عبر أجيال متعددة، مع بحث سريع بالاسم.</li>
+            <li>حاسبة قرابة تبيّن صلة أي فردين، وبطاقات للأفراد تُشارك برمز QR.</li>
+            <li>صلاحيات متعددة المستويات للإضافة والمراجعة، وصفحات لأخبار العائلة وإحصاءاتها.</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary btn-sm" href="mailto:info@awraqai.com?subject=%D8%B7%D9%84%D8%A8%20%D8%B4%D8%AC%D8%B1%D8%A9%20%D8%B9%D8%A7%D8%A6%D9%84%D8%A9">اطلب شجرة لعائلتك</a>
+          </div>
+        </article>
+
+        <!-- Hotel -->
+        <article class="app blue" aria-labelledby="a4">
+          <div class="app-head">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5.5A1.5 1.5 0 0 1 5.5 4h9A1.5 1.5 0 0 1 16 5.5V21"/><path d="M16 10h2.5A1.5 1.5 0 0 1 20 11.5V21M2.5 21h19"/><path d="M7.5 8h1.5M11 8h1.5M7.5 11.5h1.5M11 11.5h1.5M7.5 15h1.5M11 15h1.5M9 21v-2.5h2V21"/></svg></div>
+            <div>
+              <h3 id="a4">نظام الإدارة الفندقية</h3>
+              <p class="tag">تشغيل المنشأة الفندقية اليومي في نظام واحد</p>
+            </div>
+          </div>
+          <ul class="chips"><li class="chip">نظام داخلي للمنشآت</li><li class="chip soon">نسخة تجريبية عند الطلب</li></ul>
+          <p class="desc">نظام إدارة يعمل في تشغيل فندقي فعلي، يجمع مهام الفريق ووثائق المنشأة ومخزونها ورواتبها في واجهة واحدة على الجوال، مع إشعارات فورية.</p>
+          <ul class="feat">
+            <li>مهام فرق العمل وتوزيعها ومتابعة إنجازها، مع إشعارات تصل إلى الجوال.</li>
+            <li>عقود الأفراد وملفات المنشأة في أرشيف منظَّم، ودليل مرجعي للجهات وأرقام التواصل.</li>
+            <li>المخزون والعُهد، ومسيّرات الرواتب في مكان واحد.</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary btn-sm" href="mailto:info@awraqai.com?subject=%D8%B7%D9%84%D8%A8%20%D9%86%D8%B3%D8%AE%D8%A9%20%D8%AA%D8%AC%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9%20%D9%85%D9%86%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%81%D9%86%D8%AF%D9%82%D9%8A%D8%A9">اطلب نسخة تجريبية</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">مبادئنا</span>
+        <h2 id="why-title">ما الذي يجمع تطبيقاتنا؟</h2>
+      </div>
+      <div class="pr-grid">
+        <div class="pr">
+          <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h13"/></svg></div>
+          <div><h3>عربية من الأساس</h3><p>واجهات مكتوبة بالعربية الفصحى ومصممة للاتجاه من اليمين إلى اليسار منذ اللحظة الأولى، لا ترجمة مضافة لاحقًا.</p></div>
+        </div>
+        <div class="pr">
+          <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></div>
+          <div><h3>الجوال أولًا</h3><p>تُصمَّم كل شاشة لتُستخدم بيد واحدة في الفصل أو الحلقة أو أثناء العمل، ثم تتسع للحاسب.</p></div>
+        </div>
+        <div class="pr">
+          <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div><h3>الخصوصية قبل كل شيء</h3><p>نجمع أقل قدر ممكن من البيانات، ونبقيها حيث أمكن على جهاز المستخدم أو في حسابه هو.</p></div>
+        </div>
+        <div class="pr">
+          <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 7 4-14 3 7h4"/></svg></div>
+          <div><h3>من قلب الميدان</h3><p>تنطلق تطبيقاتنا من احتياجات حقيقية لمعلمين وحلقات ومنشآت، وتتطور بملاحظات مستخدميها.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audience -->
+  <section id="audience" aria-labelledby="aud-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">لمن نعمل</span>
+        <h2 id="aud-title">نخدم من يحمل عبء التنظيم كل يوم</h2>
+      </div>
+      <ul class="aud">
+        <li>المعلمون والمعلمات <span>منجز</span></li>
+        <li>المدارس وإداراتها <span>منجز</span></li>
+        <li>معلمو حلقات القرآن الكريم <span>ماهر</span></li>
+        <li>العائلات وروابطها <span>شجرة العائلة</span></li>
+        <li>المنشآت الفندقية <span>الإدارة الفندقية</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" aria-labelledby="c-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact">
+        <div style="position:relative;z-index:1">
+          <h2 id="c-title">لنتحدث عن احتياجك</h2>
+          <p>تريد تجربة أحد تطبيقاتنا في مدرستك أو منشأتك، أو بناء شجرة لعائلتك، أو لديك اقتراح أو ملاحظة؟ راسلنا وسنعود إليك.</p>
+        </div>
+        <div class="mail">
+          <a class="btn btn-primary" href="mailto:info@awraqai.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>
+            راسلنا بالبريد</a>
+          <span class="addr">info@awraqai.com</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <img src="logo-mark.webp" alt="" width="54" height="38">
+        <div><b>أوراق الذكاء الاصطناعي</b>تطبيقات عربية للتعليم والمؤسسات</div>
+      </div>
+      <nav class="f-links" aria-label="روابط التذييل">
+        <a href="#apps">التطبيقات</a>
+        <a href="#why">مبادئنا</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+        <a href="mailto:info@awraqai.com">تواصل معنا</a>
+      </nav>
+    </div>
+    <p class="copy">© <span id="yr">2026</span> أوراق الذكاء الاصطناعي (AwraqAI). جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var h=document.getElementById('top');
+  function s(){h.classList.toggle('scrolled',window.scrollY>8)}
+  window.addEventListener('scroll',s,{passive:true});s();
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
